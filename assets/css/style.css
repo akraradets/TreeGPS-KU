@@ -1,0 +1,91 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Verdana";
+	font-size: 12px;
+}
+
+table{
+	font-size: 12px;
+}
+
+th, td{
+	border-bottom: 1px solid #333;
+	padding: 4px;
+}
+
+.right{
+	float: right !important;
+}
+.dialog{
+	position: absolute;
+	border: 1px solid #333;
+	box-shadow: 6px 6px 6px #666;
+	background-color: #ddd;
+}
+
+#nav{
+	background-color: #eee;
+	border-bottom: 1px solid #000;
+	padding: 8px 32px 8px 32px;
+}
+
+a{
+	color: #00e;
+}
+
+a:hover{
+	color: #009;
+}
+
+.error{
+	color: #a00;
+}
+
+.success{
+	color: #0a0;
+}
+
+.msg{
+	padding: 8px;
+	background-color: #eef;
+	color: #003;
+	border: 1px solid #003;
+	font-size: 11px;
+	width: 500xp;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px;
+}
+
+.button{
+	width: 140px;
+	padding: 4px;
+	float: right;
+	font-size: 16px;
+	background-color: #5555ff;
+	color: #fff;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+
+.left{
+	float: left !important;
+}
+
+.red{
+	background-color: #ff5555;
+}
+
+input[type=text],input[type=password],textarea, select{
+	padding: 8px;
+	font-size: 16px;
+}
+
+.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
