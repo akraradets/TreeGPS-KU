@@ -260,6 +260,9 @@ class TreeGPS extends Line_Apps{
     $size = $this->session->get('size') == NULL ? 'ว่าง' : $this->session->get('size');
     $file = $this->session->get('image');
 
+    $latitude = number_format( $latitude , 4 );
+    $longitude = number_format( $longitude , 4 );
+
     $text = "ชื่อ:{$tree}";
     $text .= "\nขนาด:{$size}";
     $text .= "\nGPS:{$latitude},{$longitude}";
