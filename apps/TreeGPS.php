@@ -156,13 +156,6 @@ class TreeGPS extends Line_Apps{
       return "ได้รับชื่อและขนาดแล้ว";
     }
     elseif($text == "USERID"){
-      // {"events":[
-      //   {"type":"message","replyToken":"6af35d482c2b4b16a752b5bbbbee1140",
-      //     "source":{"userId":"Ucd4e662ea2be4f96b878680eb497b046","type":"user"},
-      //     "timestamp":1594401796855,"mode":"active",
-      //     "message":{"type":"text","id":"12296256034682","text":"userid"}
-      //  }],
-      //     "destination":"U09d922717d3e95ca18ea6845de8101a7"}
       // $datas = file_get_contents('php://input');
       // $deCode = json_decode($datas,true);
       // $userid = $deCode['events'][0]['source']['userId'];
@@ -196,13 +189,6 @@ class TreeGPS extends Line_Apps{
   }
 
   function message_image($message){
-    // {
-    // "type":"image",
-    // "id":"10233900215452",
-    // "contentProvider":{
-    //     "type":"line"
-    //   }
-    // }
     $results = $this->getContent($message['id']);
     if($results['result'] == 'S'){
       if($this->session->get('image') != NULL){
